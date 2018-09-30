@@ -4,15 +4,15 @@
 
 # PUMA Light Painting
 
-![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/eiffel.jpg "Eiffel")
+![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/eiffel.png "Eiffel")
 
 ![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/eiffel.gif "Eiffel Output")
 
-![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/skyline.jpg "Skyline")
+![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/skyline.png "Skyline")
 
 ![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/skyline.gif "Skyline Output")
 
-![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/love.jpg "Love")
+![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/love.png "Love")
 
 ![alt text](https://github.com/sandeepgogadi/Kinematics-Matlab/blob/master/PUMA%20Light%20Painting/love.gif "Love Output")
 
@@ -22,4 +22,4 @@ The target of this project is to paint a light painting with PUMA 260 robot and 
 
 As the robot is a RRRRRR robot(which means that the robot has 6 joints and all of them are revolute joints), I'm able to use kinematic decoupling to solve the problem of inverse kinematics. Since I have the Euler angles for the end-effector, I'm able to get the rotation matrix of the orientation, and the get the exact position of the wrist center in the world frame. That decreases the number of the unknown from 6 to 3, and make it a lot easier to solve this problem. When we only need to care about 3 unknowns, what I recommend is to use geometric approach to solve this problem, as I also used this way to get the right answer.
 
-There are other aspects that need considering, like the joint angle limit, the joint velocity limit, etc. These problems seem to be trivial, but sometimes it will lead to serious problems, like the rapid change in the joint angle value. 
+There are other aspects that need considering, like the joint angle limit, the joint velocity limit, etc. These problems seem to be trivial, but sometimes it will lead to serious problems, like the rapid change in the joint angle value.
